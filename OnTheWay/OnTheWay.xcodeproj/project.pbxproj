@@ -14,6 +14,8 @@
 		931AEF221F6B07B80049258F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 931AEF201F6B07B80049258F /* LaunchScreen.storyboard */; };
 		931AEF2B1F6B61230049258F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AEF2A1F6B61230049258F /* LoginViewController.swift */; };
 		931AEF2D1F6B636C0049258F /* SignUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AEF2C1F6B636C0049258F /* SignUPViewController.swift */; };
+		9363D2721F6DEC0E00C8222A /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363D2711F6DEC0E00C8222A /* UdacityClient.swift */; };
+		9363D2741F6DED4A00C8222A /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363D2731F6DED4A00C8222A /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		931AEF231F6B07B80049258F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		931AEF2A1F6B61230049258F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		931AEF2C1F6B636C0049258F /* SignUPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUPViewController.swift; sourceTree = "<group>"; };
+		9363D2711F6DEC0E00C8222A /* UdacityClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
+		9363D2731F6DED4A00C8222A /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		931AEF161F6B07B80049258F /* OnTheWay */ = {
 			isa = PBXGroup;
 			children = (
+				9363D26F1F6DEBDF00C8222A /* Clients */,
 				931AEF291F6B5F360049258F /* ViewControllers */,
 				931AEF171F6B07B80049258F /* AppDelegate.swift */,
 				931AEF191F6B07B80049258F /* ViewController.swift */,
@@ -65,8 +70,6 @@
 				931AEF1E1F6B07B80049258F /* Assets.xcassets */,
 				931AEF201F6B07B80049258F /* LaunchScreen.storyboard */,
 				931AEF231F6B07B80049258F /* Info.plist */,
-				931AEF2A1F6B61230049258F /* LoginViewController.swift */,
-				931AEF2C1F6B636C0049258F /* SignUPViewController.swift */,
 			);
 			path = OnTheWay;
 			sourceTree = "<group>";
@@ -74,8 +77,27 @@
 		931AEF291F6B5F360049258F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				931AEF2A1F6B61230049258F /* LoginViewController.swift */,
+				931AEF2C1F6B636C0049258F /* SignUPViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9363D26F1F6DEBDF00C8222A /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				9363D2701F6DEBE800C8222A /* Udacity */,
+				9363D2731F6DED4A00C8222A /* ApiClient.swift */,
+			);
+			name = Clients;
+			sourceTree = "<group>";
+		};
+		9363D2701F6DEBE800C8222A /* Udacity */ = {
+			isa = PBXGroup;
+			children = (
+				9363D2711F6DEC0E00C8222A /* UdacityClient.swift */,
+			);
+			name = Udacity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,10 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9363D2721F6DEC0E00C8222A /* UdacityClient.swift in Sources */,
 				931AEF2B1F6B61230049258F /* LoginViewController.swift in Sources */,
 				931AEF1A1F6B07B80049258F /* ViewController.swift in Sources */,
 				931AEF2D1F6B636C0049258F /* SignUPViewController.swift in Sources */,
 				931AEF181F6B07B80049258F /* AppDelegate.swift in Sources */,
+				9363D2741F6DED4A00C8222A /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +344,7 @@
 				931AEF281F6B07B80049258F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

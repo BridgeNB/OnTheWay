@@ -170,6 +170,9 @@
                                 <rect key="frame" x="267" y="506" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In"/>
+                                <connections>
+                                    <segue destination="jZq-tf-FWg" kind="show" id="0SY-iF-Su3"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-u" translatesAutoresizingMaskIntoConstraints="NO" id="jVO-kD-vCs">
                                 <rect key="frame" x="143" y="159" width="89" height="68"/>
@@ -194,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yf-Hq-sQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1224.8" y="463.71814092953525"/>
+            <point key="canvasLocation" x="1225" y="494"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YFd-Yb-3jp">
@@ -218,4 +221,7 @@
     <resources>
         <image name="logo-u" width="62" height="62"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0SY-iF-Su3"/>
+    </inferredMetricsTieBreakers>
 </document>
